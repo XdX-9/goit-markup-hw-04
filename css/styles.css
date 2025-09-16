@@ -126,7 +126,7 @@ a {
 	color: #404bbf;
 }
 
-.nav-link::after {
+.current::after {
 	content: '';
 	width: 100%;
 	position: absolute;
@@ -135,18 +135,12 @@ a {
 	height: 4px;
 	background-color: #404bbf;
 	border-radius: 2px;
-	transform: scaleX(0);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
 	color: #404bbf;
-}
-
-.nav-link:hover::after,
-.nav-link:focus::after {
-	transform: scaleX(1);
 }
 
 .contacts {
